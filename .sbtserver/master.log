@@ -431,3 +431,611 @@ Total time: 24 s, completed 01.10.2015 21:58:47
 > server-post-command-error-handler
 > server-post-command-cleanup
 > server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@1db5dd0, check cycles: false
+Total time: 7 s, completed 01.10.2015 22:23:15
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/qwerty/}myProject/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@917e0, check cycles: false
+Total time: 4 s, completed 01.10.2015 22:23:39
+> server-post-command-cleanup
+> server-handle-next-server-request
+> myProject/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@2d1b5f, check cycles: false
+Total time: 0 s, completed 01.10.2015 22:23:48
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/qwerty/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@559cc3, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+
+Read from stdout: Compiling 2 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Compiling 2 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Read from stdout: Note: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java uses or overrides a deprecated API.
+Note: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java uses or overrides a deprecated API.
+Read from stdout: Note: Recompile with -Xlint:deprecation for details.
+Note: Recompile with -Xlint:deprecation for details.
+Read from stdout: Note: Some input files use unchecked or unsafe operations.
+Note: Some input files use unchecked or unsafe operations.
+Read from stdout: Note: Recompile with -Xlint:unchecked for details.
+Note: Recompile with -Xlint:unchecked for details.
+Java compilation took 10.87488376 s
+Java analysis took 2.06257037 s
+Java compile + analysis took 13.325025641 s
+Invalidating C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java)
+The C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java source file has the following regular definitions changed:
+	deletePhone.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala: Set(deletePhone)
+Invalidating C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+The C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java source file has the following regular definitions changed:
+	Delete.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java
+None of the modified names appears in C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Read from stdout: Compiling 1 Scala source to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 1651090, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\play-enhancer\1.1.0\jars\play-enhancer.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-1.0.0.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;C:\Users\irk\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;D:\INSTALL\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\irk\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\irk\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\irk\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;D:\INSTALL\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;D:\INSTALL\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.3.0\bundles\scala-java8-compat_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.yaml\snakeyaml\1.15\bundles\snakeyaml.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.hibernate\hibernate-validator\5.0.3.Final\jars\hibernate-validator.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.validation\validation-api\1.1.0.Final\jars\validation-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml\classmate\1.0.0\bundles\classmate.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.jboss.logging\jboss-logging\3.2.1.Final\jars\jboss-logging.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-context\4.1.6.RELEASE\jars\spring-context.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-core\4.1.6.RELEASE\jars\spring-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-beans\4.1.6.RELEASE\jars\spring-beans.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.reflections\reflections\0.9.9\jars\reflections.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\annotations\2.0.1\jars\annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.jodah\typetools\0.4.1\bundles\typetools.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\jsr305\2.0.3\jars\jsr305.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.tomcat\tomcat-servlet-api\8.0.21\jars\tomcat-servlet-api.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.4.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-4.6.2.jar;C:\Users\irk\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.5.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\irk\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Warning: node.js detection failed, sbt will use the Rhino based Trireme JavaScript engine instead to run JavaScript assets compilation, which in some cases may be orders of magnitude slower than using node.js.
+Read from stdout: C:\Users\irk\Desktop\test\qwerty\conf\routes:12: value deletePhone is not a member of controllers.Application
+C:\Users\irk\Desktop\test\qwerty\conf\routes:12: value deletePhone is not a member of controllers.Application
+Read from stdout: POST     /deletePhone                    controllers.Application.deletePhone(id:String)
+POST     /deletePhone                    controllers.Application.deletePhone(id:String)
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Total time: 41 s, completed 01.10.2015 22:24:40
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/qwerty/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1db1858, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+
+Read from stdout: Compiling 2 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Compiling 2 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Read from stdout: Note: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java uses or overrides a deprecated API.
+Note: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java uses or overrides a deprecated API.
+Read from stdout: Note: Recompile with -Xlint:deprecation for details.
+Note: Recompile with -Xlint:deprecation for details.
+Read from stdout: Note: Some input files use unchecked or unsafe operations.
+Note: Some input files use unchecked or unsafe operations.
+Read from stdout: Note: Recompile with -Xlint:unchecked for details.
+Note: Recompile with -Xlint:unchecked for details.
+Java compilation took 10.294910541 s
+Java analysis took 2.575849572 s
+Java compile + analysis took 13.332939601 s
+Invalidating C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java)
+The C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java source file has the following regular definitions changed:
+	deletePhone.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala: Set(deletePhone)
+Invalidating C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+The C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java source file has the following regular definitions changed:
+	Delete.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java
+None of the modified names appears in C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Read from stdout: Compiling 1 Scala source to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 109274c, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\play-enhancer\1.1.0\jars\play-enhancer.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-1.0.0.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;C:\Users\irk\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;D:\INSTALL\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\irk\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\irk\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\irk\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;D:\INSTALL\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;D:\INSTALL\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.3.0\bundles\scala-java8-compat_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.yaml\snakeyaml\1.15\bundles\snakeyaml.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.hibernate\hibernate-validator\5.0.3.Final\jars\hibernate-validator.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.validation\validation-api\1.1.0.Final\jars\validation-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml\classmate\1.0.0\bundles\classmate.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.jboss.logging\jboss-logging\3.2.1.Final\jars\jboss-logging.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-context\4.1.6.RELEASE\jars\spring-context.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-core\4.1.6.RELEASE\jars\spring-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-beans\4.1.6.RELEASE\jars\spring-beans.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.reflections\reflections\0.9.9\jars\reflections.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\annotations\2.0.1\jars\annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.jodah\typetools\0.4.1\bundles\typetools.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\jsr305\2.0.3\jars\jsr305.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.tomcat\tomcat-servlet-api\8.0.21\jars\tomcat-servlet-api.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.4.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-4.6.2.jar;C:\Users\irk\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.5.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\irk\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\irk\Desktop\test\qwerty\conf\routes:12: value deletePhone is not a member of controllers.Application
+C:\Users\irk\Desktop\test\qwerty\conf\routes:12: value deletePhone is not a member of controllers.Application
+Read from stdout: POST     /deletePhone                    controllers.Application.deletePhone(id:String)
+POST     /deletePhone                    controllers.Application.deletePhone(id:String)
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Total time: 42 s, completed 01.10.2015 22:25:23
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/qwerty/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@12dff70, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+
+Read from stdout: Compiling 2 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Compiling 2 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Read from stdout: Note: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java uses or overrides a deprecated API.
+Note: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java uses or overrides a deprecated API.
+Read from stdout: Note: Recompile with -Xlint:deprecation for details.
+Note: Recompile with -Xlint:deprecation for details.
+Read from stdout: Note: Some input files use unchecked or unsafe operations.
+Note: Some input files use unchecked or unsafe operations.
+Read from stdout: Note: Recompile with -Xlint:unchecked for details.
+Note: Recompile with -Xlint:unchecked for details.
+Java compilation took 10.796118519 s
+Java analysis took 4.220696866 s
+Java compile + analysis took 15.370029629 s
+Invalidating C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java)
+The C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java source file has the following regular definitions changed:
+	deletePhone.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala: Set(deletePhone)
+Invalidating C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+The C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java source file has the following regular definitions changed:
+	Delete.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java
+None of the modified names appears in C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Read from stdout: Compiling 1 Scala source to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 110cc84, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\play-enhancer\1.1.0\jars\play-enhancer.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-1.0.0.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;C:\Users\irk\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;D:\INSTALL\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\irk\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\irk\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\irk\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;D:\INSTALL\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;D:\INSTALL\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.3.0\bundles\scala-java8-compat_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.yaml\snakeyaml\1.15\bundles\snakeyaml.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.hibernate\hibernate-validator\5.0.3.Final\jars\hibernate-validator.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.validation\validation-api\1.1.0.Final\jars\validation-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml\classmate\1.0.0\bundles\classmate.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.jboss.logging\jboss-logging\3.2.1.Final\jars\jboss-logging.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-context\4.1.6.RELEASE\jars\spring-context.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-core\4.1.6.RELEASE\jars\spring-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-beans\4.1.6.RELEASE\jars\spring-beans.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.reflections\reflections\0.9.9\jars\reflections.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\annotations\2.0.1\jars\annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.jodah\typetools\0.4.1\bundles\typetools.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\jsr305\2.0.3\jars\jsr305.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.tomcat\tomcat-servlet-api\8.0.21\jars\tomcat-servlet-api.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.4.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-4.6.2.jar;C:\Users\irk\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.5.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\irk\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\irk\Desktop\test\qwerty\conf\routes:12: value deletePhone is not a member of controllers.Application
+C:\Users\irk\Desktop\test\qwerty\conf\routes:12: value deletePhone is not a member of controllers.Application
+Read from stdout: POST     /deletePhone                    controllers.Application.deletePhone(id:String)
+POST     /deletePhone                    controllers.Application.deletePhone(id:String)
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Total time: 47 s, completed 01.10.2015 22:26:16
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/qwerty/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@12b9854, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+
+Read from stdout: Compiling 2 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Compiling 2 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Read from stdout: Note: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java uses or overrides a deprecated API.
+Note: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java uses or overrides a deprecated API.
+Read from stdout: Note: Recompile with -Xlint:deprecation for details.
+Note: Recompile with -Xlint:deprecation for details.
+Read from stdout: Note: Some input files use unchecked or unsafe operations.
+Note: Some input files use unchecked or unsafe operations.
+Read from stdout: Note: Recompile with -Xlint:unchecked for details.
+Note: Recompile with -Xlint:unchecked for details.
+Java compilation took 8.884673504 s
+Java analysis took 1.726817663 s
+Java compile + analysis took 10.915729914 s
+Invalidating C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java)
+The C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java source file has the following regular definitions changed:
+	deletePhone.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala: Set(deletePhone)
+Invalidating C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+The C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java source file has the following regular definitions changed:
+	Delete.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java
+None of the modified names appears in C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala. This dependency is not being considered for invalidation.
+New invalidations:
+	Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala)
+Read from stdout: Compiling 1 Scala source to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 1234c9b, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\play-enhancer\1.1.0\jars\play-enhancer.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-1.0.0.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;C:\Users\irk\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;D:\INSTALL\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\irk\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\irk\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\irk\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;D:\INSTALL\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;D:\INSTALL\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.3.0\bundles\scala-java8-compat_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.yaml\snakeyaml\1.15\bundles\snakeyaml.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.hibernate\hibernate-validator\5.0.3.Final\jars\hibernate-validator.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.validation\validation-api\1.1.0.Final\jars\validation-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml\classmate\1.0.0\bundles\classmate.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.jboss.logging\jboss-logging\3.2.1.Final\jars\jboss-logging.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-context\4.1.6.RELEASE\jars\spring-context.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-core\4.1.6.RELEASE\jars\spring-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-beans\4.1.6.RELEASE\jars\spring-beans.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.reflections\reflections\0.9.9\jars\reflections.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\annotations\2.0.1\jars\annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.jodah\typetools\0.4.1\bundles\typetools.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\jsr305\2.0.3\jars\jsr305.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.tomcat\tomcat-servlet-api\8.0.21\jars\tomcat-servlet-api.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.4.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-4.6.2.jar;C:\Users\irk\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.5.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\irk\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\irk\Desktop\test\qwerty\conf\routes:12: value deletePhone is not a member of controllers.Application
+C:\Users\irk\Desktop\test\qwerty\conf\routes:12: value deletePhone is not a member of controllers.Application
+Read from stdout: POST     /deletePhone                    controllers.Application.deletePhone(id:String)
+POST     /deletePhone                    controllers.Application.deletePhone(id:String)
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Total time: 28 s, completed 01.10.2015 22:26:52
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/qwerty/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e370f1, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+
+Recompiling all 10 sources: invalidated sources (7) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 3 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Compiling 7 Scala sources and 3 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 650ff0, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\play-enhancer\1.1.0\jars\play-enhancer.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-1.0.0.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;C:\Users\irk\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;D:\INSTALL\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\irk\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\irk\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\irk\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;D:\INSTALL\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;D:\INSTALL\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.3.0\bundles\scala-java8-compat_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.yaml\snakeyaml\1.15\bundles\snakeyaml.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.hibernate\hibernate-validator\5.0.3.Final\jars\hibernate-validator.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.validation\validation-api\1.1.0.Final\jars\validation-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml\classmate\1.0.0\bundles\classmate.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.jboss.logging\jboss-logging\3.2.1.Final\jars\jboss-logging.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-context\4.1.6.RELEASE\jars\spring-context.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-core\4.1.6.RELEASE\jars\spring-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-beans\4.1.6.RELEASE\jars\spring-beans.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.reflections\reflections\0.9.9\jars\reflections.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\annotations\2.0.1\jars\annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.jodah\typetools\0.4.1\bundles\typetools.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\jsr305\2.0.3\jars\jsr305.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.tomcat\tomcat-servlet-api\8.0.21\jars\tomcat-servlet-api.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.4.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-4.6.2.jar;C:\Users\irk\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.5.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\irk\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\irk\Desktop\test\qwerty\app\views\phoneBook.scala.html:14: value deletePhone is not a member of controllers.ReverseApplication
+C:\Users\irk\Desktop\test\qwerty\app\views\phoneBook.scala.html:14: value deletePhone is not a member of controllers.ReverseApplication
+Read from stdout: @form(routes.Application.deletePhone(phone.id)) {
+                @form(routes.Application.deletePhone(phone.id)) {
+Read from stdout: ^
+                                                      ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Total time: 28 s, completed 01.10.2015 22:30:16
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/qwerty/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@45faf9, check cycles: false
+Read from stdout: C:\Users\irk\Desktop\test\qwerty\app\views\phoneBook.scala.html:31: Not parsed?
+C:\Users\irk\Desktop\test\qwerty\app\views\phoneBook.scala.html:31: Not parsed?
+Read from stdout: }
+}
+Read from stdout: ^
+^
+Total time: 15 s, completed 01.10.2015 22:32:47
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/qwerty/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@12a227b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+
+Recompiling all 10 sources: invalidated sources (8) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 3 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Compiling 7 Scala sources and 3 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler cd9298, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\play-enhancer\1.1.0\jars\play-enhancer.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-1.0.0.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;C:\Users\irk\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;D:\INSTALL\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\irk\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\irk\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\irk\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;D:\INSTALL\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;D:\INSTALL\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.3.0\bundles\scala-java8-compat_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.yaml\snakeyaml\1.15\bundles\snakeyaml.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.hibernate\hibernate-validator\5.0.3.Final\jars\hibernate-validator.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.validation\validation-api\1.1.0.Final\jars\validation-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml\classmate\1.0.0\bundles\classmate.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.jboss.logging\jboss-logging\3.2.1.Final\jars\jboss-logging.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-context\4.1.6.RELEASE\jars\spring-context.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-core\4.1.6.RELEASE\jars\spring-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-beans\4.1.6.RELEASE\jars\spring-beans.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.reflections\reflections\0.9.9\jars\reflections.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\annotations\2.0.1\jars\annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.jodah\typetools\0.4.1\bundles\typetools.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\jsr305\2.0.3\jars\jsr305.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.tomcat\tomcat-servlet-api\8.0.21\jars\tomcat-servlet-api.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.4.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-4.6.2.jar;C:\Users\irk\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.5.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\irk\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Read from stdout: C:\Users\irk\Desktop\test\qwerty\app\views\phoneBook.scala.html:15: value number is not a member of models.Phone
+C:\Users\irk\Desktop\test\qwerty\app\views\phoneBook.scala.html:15: value number is not a member of models.Phone
+Read from stdout: 
+                
+Read from stdout: ^
+      ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Total time: 26 s, completed 01.10.2015 22:35:48
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/qwerty/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@1b33647, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java, C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala, C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+
+Recompiling all 10 sources: invalidated sources (8) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 3 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Compiling 7 Scala sources and 3 Java sources to C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 4da0e9, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\play-enhancer\1.1.0\jars\play-enhancer.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-1.0.0.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;C:\Users\irk\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;D:\INSTALL\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\irk\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\irk\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\irk\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;D:\INSTALL\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;D:\INSTALL\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.3.0\bundles\scala-java8-compat_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.yaml\snakeyaml\1.15\bundles\snakeyaml.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.hibernate\hibernate-validator\5.0.3.Final\jars\hibernate-validator.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.validation\validation-api\1.1.0.Final\jars\validation-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml\classmate\1.0.0\bundles\classmate.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.jboss.logging\jboss-logging\3.2.1.Final\jars\jboss-logging.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-context\4.1.6.RELEASE\jars\spring-context.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-core\4.1.6.RELEASE\jars\spring-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-beans\4.1.6.RELEASE\jars\spring-beans.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.reflections\reflections\0.9.9\jars\reflections.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\annotations\2.0.1\jars\annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.jodah\typetools\0.4.1\bundles\typetools.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\jsr305\2.0.3\jars\jsr305.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.tomcat\tomcat-servlet-api\8.0.21\jars\tomcat-servlet-api.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.4.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-4.6.2.jar;C:\Users\irk\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.5.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\irk\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Scala compilation took 35.773615385 s
+Read from stdout: Note: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java uses or overrides a deprecated API.
+Note: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java uses or overrides a deprecated API.
+Read from stdout: Note: Recompile with -Xlint:deprecation for details.
+Note: Recompile with -Xlint:deprecation for details.
+Read from stdout: Note: Some input files use unchecked or unsafe operations.
+Note: Some input files use unchecked or unsafe operations.
+Read from stdout: Note: Recompile with -Xlint:unchecked for details.
+Note: Recompile with -Xlint:unchecked for details.
+Java compilation took 6.590022222 s
+Java analysis took 1.740624501 s
+Java compile + analysis took 8.539178917 s
+Invalidating C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java)
+The C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java source file has the following regular definitions changed:
+	deletePhone.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java
+None of the modified names appears in C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala. This dependency is not being considered for invalidation.
+Invalidating C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java)
+The C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java source file has the following regular definitions changed:
+	Delete.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\app\models\Phone.java
+Invalidating C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+The C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala source file has the following regular definitions changed:
+	deletePhone.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java
+Invalidating C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+The C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala source file has the following regular definitions changed:
+	deletePhone.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\main.template.scala. This dependency is not being considered for invalidation.
+None of the modified names appears in C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala. This dependency is not being considered for invalidation.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java
+New invalidations:
+	Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java)
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java)
+Including C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\controllers\routes.java
+Including C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala by C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\main.template.scala
+Including C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java by C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala
+Including C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java
+Including C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\index.template.scala by C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\twirl\main\views\html\main.template.scala
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set(C:\Users\irk\Desktop\test\qwerty\app\controllers\Application.java)
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Copy resource mappings: 
+	(C:\Users\irk\Desktop\test\qwerty\conf\application.conf,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\application.conf)
+	(C:\Users\irk\Desktop\test\qwerty\conf\evolutions,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\evolutions)
+	(C:\Users\irk\Desktop\test\qwerty\conf\logback.xml,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\logback.xml)
+	(C:\Users\irk\Desktop\test\qwerty\conf\routes,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\routes)
+	(C:\Users\irk\Desktop\test\qwerty\conf\evolutions\default,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\irk\Desktop\test\qwerty\conf\evolutions\default\1.sql,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 66 s, completed 01.10.2015 22:37:21
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/qwerty/}myProject/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@4543ec, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\irk\Desktop\test\qwerty\conf\application.conf,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\application.conf)
+	(C:\Users\irk\Desktop\test\qwerty\conf\evolutions,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\evolutions)
+	(C:\Users\irk\Desktop\test\qwerty\conf\logback.xml,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\logback.xml)
+	(C:\Users\irk\Desktop\test\qwerty\conf\routes,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\routes)
+	(C:\Users\irk\Desktop\test\qwerty\conf\evolutions\default,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\evolutions\default)
+	(C:\Users\irk\Desktop\test\qwerty\conf\evolutions\default\1.sql,C:\Users\irk\Desktop\test\qwerty\target\scala-2.11\classes\evolutions\default\1.sql)
+Total time: 18 s, completed 01.10.2015 22:38:06
+> server-post-command-cleanup
+> server-handle-next-server-request
