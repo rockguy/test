@@ -1,0 +1,32 @@
+@(phoneBook: List[Phone], phoneForm: Form[Phone])
+
+@import helper._
+
+@main("PhoneBook") {
+    
+    <h1>@phoneBook.size() phone(s)</h1>
+    
+    <ul>
+        @for(phone <- phoneBook) {
+            <li>
+                @phone.name
+                
+                @form(routes.Application.deletePhone(phone.id)) {
+                    <input type="submit" value="Delete">
+                }
+            </li>
+        }
+    </ul> 
+    
+    <h2>Add a new task</h2>
+    
+    @form(routes.Application.newPhone()) {
+        
+        @inputText(phoneForm("Name")) 
+        @inputText(phoneForm("mainNumber")) 
+        
+        <input type="submit" value="Create">
+        
+    }
+    
+}
