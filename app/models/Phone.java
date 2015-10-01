@@ -26,6 +26,10 @@ public class Phone extends Model {
       phone.save();
   }
    
+   /*public static void Delete(String id) {
+        find.ref(id);
+       
+   }*/
   /*
   public static void delete(Long id) {
       Phone.find.ref(id).delete();

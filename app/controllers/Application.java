@@ -30,9 +30,16 @@ public class Application extends Controller {
         }
     
     }
-    
+    /*
     public Result deletePhone(String id){
-        return TODO;
-    }
+        Form<Phone> phoneList = phoneForm.bindFromRequest();
+        if(phoneList.hasErrors()){
+            return badRequest(views.html.phoneBook.render(Phone.find.all(),phoneList));
+        }
+        else
+        {Phone.Delete(id);
+            return redirect("/");
+        }
+    }*/
 
 }
