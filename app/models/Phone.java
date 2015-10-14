@@ -8,7 +8,7 @@ import javax.persistence.*;
 @Entity
 public class Phone extends Model {
     @Id
-  public String id;
+  public long id;
   @Required
   public String name;
   @Required
@@ -30,9 +30,10 @@ public class Phone extends Model {
         find.ref(id);
        
    }*/
-  /*
-  public static void delete(Long id) {
-      Phone.find.ref(id).delete();
-  }*/
+  
+  public static void delete(long id) {
+      Phone phone = (Phone) Phone.find.ref(id);
+      phone.delete();
+  }
     
 }

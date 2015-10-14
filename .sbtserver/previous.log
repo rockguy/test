@@ -1,5 +1,5 @@
-New log file opened at Thu Oct 01 21:54:50 IRKT 2015 by 5760@dns
-jvm 5760@dns
+New log file opened at Tue Oct 13 20:57:41 IRKT 2015 by 8092@dns
+jvm 8092@dns
 jvm vmName=Java HotSpot(TM) Client VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -7,16 +7,16 @@ Starting event engine
 Starting sbt command engine
 Waiting for sbt command engine
 Command engine arguments=List()
-Command engine baseDirectory=C:\Users\irk\Desktop\test\qwerty
+Command engine baseDirectory=C:\Users\irk\Desktop\test\test
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
 > onFailure load-failed
 > boot
 > reload
-[Loading] Scanning directory C:\Users\irk\Desktop\test\qwerty\project
+[Loading] Scanning directory C:\Users\irk\Desktop\test\test\project
 [Loading] Found non-root projects 
-[Loading] Done in C:\Users\irk\Desktop\test\qwerty\project, returning: ()
+[Loading] Done in C:\Users\irk\Desktop\test\test\project, returning: ()
 deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
 sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
@@ -25,9 +25,9 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
   :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
-[Loading] Done in C:\Users\irk\Desktop\test\qwerty\project, returning: (qwerty-build)
-Loading project definition from C:\Users\irk\Desktop\test\qwerty\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@226fac, check cycles: false
+[Loading] Done in C:\Users\irk\Desktop\test\test\project, returning: (test-build)
+Loading project definition from C:\Users\irk\Desktop\test\test\project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@35593d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -46,7 +46,7 @@ All initially invalidated sources: Set()
 
 Copy resource mappings: 
 	
-[Loading] Scanning directory C:\Users\irk\Desktop\test\qwerty
+[Loading] Scanning directory C:\Users\irk\Desktop\test\test
 [Loading] Found root project myProject w/ remaining 
 deducing auto plugins based on known facts Set(Atom(play.sbt.PlayJava), Atom(play.ebean.sbt.PlayEbean), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler))), Clause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.AkkaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin))), Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.less.SbtLess),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.jshint.SbtJSHint),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.rjs.SbtRjs),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.digest.SbtDigest),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.mocha.SbtMocha),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.ebean.sbt.PlayEbean),Set(Atom(com.typesafe.play.sbt.enhancer.PlayEnhancer))), Clause(Atom(com.typesafe.play.sbt.enhancer.PlayEnhancer),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(And(Set(Atom(sbt.plugins.BackgroundRunPlugin), Atom(play.sbt.Play), Atom(sbt.plugins.SerializersPlugin))),Set(Atom(play.sbt.forkrun.PlayForkRun))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayLayoutPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayNettyServer))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.less.SbtLess))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jshint.SbtJSHint))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.rjs.SbtRjs))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.digest.SbtDigest))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.mocha.SbtMocha))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(com.typesafe.play.sbt.enhancer.PlayEnhancer)))))
   :: deduced result: Matched(sbt.plugins.CorePlugin,play.ebean.sbt.PlayEbean,play.sbt.PlayJava,com.typesafe.play.sbt.enhancer.PlayEnhancer,sbt.plugins.InteractionServicePlugin,sbt.plugins.SendEventServicePlugin,play.sbt.Play,sbt.plugins.SerializersPlugin,sbt.plugins.IvyPlugin,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,play.twirl.sbt.SbtTwirl,sbt.plugins.JvmPlugin,play.sbt.PlayNettyServer,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,com.typesafe.sbt.jshint.SbtJSHint,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,sbt.plugins.JUnitXmlReportPlugin,com.typesafe.sbt.mocha.SbtMocha,com.typesafe.sbt.less.SbtLess,com.typesafe.sbt.rjs.SbtRjs,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.coffeescript.SbtCoffeeScript,sbt.plugins.BackgroundRunPlugin,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.docker.DockerPlugin,play.sbt.forkrun.PlayForkRun,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.digest.SbtDigest,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)
@@ -60,12 +60,186 @@ sorting: ns: List(sbt.plugins.CorePlugin, play.ebean.sbt.PlayEbean, play.sbt.Pla
   :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, com.typesafe.play.sbt.enhancer.PlayEnhancer, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, play.ebean.sbt.PlayEbean, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript) not found List(play.sbt.PlayJava, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun)
   :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, com.typesafe.play.sbt.enhancer.PlayEnhancer, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, play.ebean.sbt.PlayEbean, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayJava, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun) not found List()
   :: sorted deduced result: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, com.typesafe.play.sbt.enhancer.PlayEnhancer, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, play.ebean.sbt.PlayEbean, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayJava, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun)
-[Loading] Done in C:\Users\irk\Desktop\test\qwerty, returning: (myProject)
-Set current project to qwerty (in build file:/C:/Users/irk/Desktop/test/qwerty/)
+[Loading] Done in C:\Users\irk\Desktop\test\test, returning: (myProject)
+Set current project to qwerty (in build file:/C:/Users/irk/Desktop/test/test/)
 Reapplying settings...
-Set current project to qwerty (in build file:/C:/Users/irk/Desktop/test/qwerty/)
+Set current project to qwerty (in build file:/C:/Users/irk/Desktop/test/test/)
 > iflast shell
 > server-send-ready-for-request
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@d2438a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\test\app\models\Phone.java, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\test\app\controllers\Application.java, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\index.template.scala)
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\test\app\models\Phone.java, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\test\app\controllers\Application.java, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\index.template.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\irk\Desktop\test\test\app\models\Phone.java, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\irk\Desktop\test\test\app\controllers\Application.java, C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\index.template.scala)
+
+Recompiling all 10 sources: invalidated sources (10) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 3 Java sources to C:\Users\irk\Desktop\test\test\target\scala-2.11\classes...
+Compiling 7 Scala sources and 3 Java sources to C:\Users\irk\Desktop\test\test\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 1fecef9, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_60\classes;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\irk\Desktop\test\test\target\scala-2.11\classes;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\play-enhancer\1.1.0\jars\play-enhancer.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.1.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ebean_2.11\jars\play-ebean_2.11-1.0.0.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-jdbc_2.11\jars\play-java-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;C:\Users\irk\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.6.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;C:\Users\irk\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\irk\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;D:\INSTALL\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\irk\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\irk\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\irk\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;D:\INSTALL\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;D:\INSTALL\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java_2.11\jars\play-java_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.scala-lang.modules\scala-java8-compat_2.11\0.3.0\bundles\scala-java8-compat_2.11.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.yaml\snakeyaml\1.15\bundles\snakeyaml.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.hibernate\hibernate-validator\5.0.3.Final\jars\hibernate-validator.jar;D:\INSTALL\activator-dist-1.3.6\repository\javax.validation\validation-api\1.1.0.Final\jars\validation-api.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.fasterxml\classmate\1.0.0\bundles\classmate.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.jboss.logging\jboss-logging\3.2.1.Final\jars\jboss-logging.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-context\4.1.6.RELEASE\jars\spring-context.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-core\4.1.6.RELEASE\jars\spring-core.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.springframework\spring-beans\4.1.6.RELEASE\jars\spring-beans.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.reflections\reflections\0.9.9\jars\reflections.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\annotations\2.0.1\jars\annotations.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.jodah\typetools\0.4.1\bundles\typetools.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.google.code.findbugs\jsr305\2.0.3\jars\jsr305.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.tomcat\tomcat-servlet-api\8.0.21\jars\tomcat-servlet-api.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-jdbc-evolutions_2.11\jars\play-jdbc-evolutions_2.11-2.4.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm\jars\avaje-ebeanorm-4.6.2.jar;C:\Users\irk\.ivy2\cache\javax.persistence\persistence-api\jars\persistence-api-1.0.jar;C:\Users\irk\.ivy2\cache\org.avaje.ebeanorm\avaje-ebeanorm-agent\jars\avaje-ebeanorm-agent-4.5.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-java-ws_2.11\jars\play-java-ws_2.11-2.4.3.jar;C:\Users\irk\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;D:\INSTALL\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\irk\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;D:\INSTALL\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\irk\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar
+Scala compilation took 43.765859259 s
+Read from stdout: Note: C:\Users\irk\Desktop\test\test\app\models\Phone.java uses or overrides a deprecated API.
+Note: C:\Users\irk\Desktop\test\test\app\models\Phone.java uses or overrides a deprecated API.
+Read from stdout: Note: Recompile with -Xlint:deprecation for details.
+Note: Recompile with -Xlint:deprecation for details.
+Read from stdout: Note: Some input files use unchecked or unsafe operations.
+Note: Some input files use unchecked or unsafe operations.
+Read from stdout: Note: Recompile with -Xlint:unchecked for details.
+Note: Recompile with -Xlint:unchecked for details.
+Java compilation took 11.511480912 s
+Java analysis took 4.53397037 s
+Java compile + analysis took 16.417108262 s
+Invalidating C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\Routes.scala...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\Routes.scala...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\Routes.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\Routes.scala)
+The C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\Routes.scala source file has the following regular definitions changed:
+	notify, badRequest, wait, $asInstanceOf, routes, createInvoker, controllers_Assets_versioned1_invoker, equals, prefix, asInstanceOf, controllers_Application_newPhone3_invoker, documentation, controllers_Application_index0_invoker, synchronized, $isInstanceOf, handlerFor, notifyAll, isInstanceOf, errorHandler, <init>, controllers_Application_newPhone3_route, ==, clone, controllers_Application_phoneBook2_invoker, Routes, controllers_Assets_versioned1_route, toString, !=, controllers_Application_phoneBook2_route, fakeValue, getClass, controllers_Application_index0_route, ne, withPrefix, call, eq, defaultPrefix, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+The C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala source file has the following regular definitions changed:
+	notify, _defaultPrefix, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, ReverseAssets, notifyAll, isInstanceOf, <init>, ==, phoneBook, clone, toString, newPhone, !=, getClass, ne, versioned, eq, ReverseApplication, ##, finalize, index, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala: Set(<init>, phoneBook, newPhone)
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\main.template.scala: Set(<init>, versioned)
+Invalidating C:\Users\irk\Desktop\test\test\app\models\Phone.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\test\app\models\Phone.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\test\app\models\Phone.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\test\app\models\Phone.java)
+The C:\Users\irk\Desktop\test\test\app\models\Phone.java source file has the following regular definitions changed:
+	notify, find, refresh, name, findFutureRowCount, nextId, wait, Model$Find, setId, insert, equals, serverName, findEachWhile, all, findEach, setReadOnly, Model$Finder, db, create, query, ref, findPagedList, setQuery, byId, setAutofetch, notifyAll, setUseQueryCache, filter, setRawSql, select, getExpressionFactory, Phone, setUseCache, <init>, id, on, apply, findSet, order, findRowCount, orderBy, setMaxRows, delete, findIds, fetch, setLoadBeanCache, toString, markAsDirty, where, setFirstRow, getClass, update, type, save, mainNumber, findList, setForUpdate, hashCode, deleteById, findMap.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\test\app\controllers\Application.java
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\test\app\models\Phone.java
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala: Set(name, Phone, <init>, apply, mainNumber)
+Invalidating C:\Users\irk\Desktop\test\test\app\controllers\Application.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\test\app\controllers\Application.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\test\app\controllers\Application.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\test\app\controllers\Application.java)
+The C:\Users\irk\Desktop\test\test\app\controllers\Application.java source file has the following regular definitions changed:
+	enumerator, notify, FROM, movedPermanently, CONTENT_LANGUAGE, CREATED, temporaryRedirect, Results$StringChunks$WhenReadyStringChunks, WARNING, CONTINUE, SET_COOKIE2, CONTENT_DISPOSITION, wrappedStatus, channel, CONTENT_TYPE, Results$Redirect, badRequest, wait, ACCESS_CONTROL_ALLOW_METHODS, USER_AGENT, ctx, HOST, CONTENT_MD5, request, X_FORWARDED_PORT, paymentRequired, BAD_REQUEST, logger, MAX_FORWARDS, X_FORWARDED_HOST, redirect, TRAILER, PROXY_AUTHENTICATE, AUTHORIZATION, CACHE_CONTROL, NOT_IMPLEMENTED, equals, PAYMENT_REQUIRED, RETRY_AFTER, PRECONDITION_FAILED, CONFLICT, ACCEPT_CHARSET, Results$ByteChunks$WhenReadyByteChunks, onReady, VIA, REQUEST_TIMEOUT, MULTIPLE_CHOICES, redirectLocation, notFound, MOVED_PERMANENTLY, TE, CONTENT_LOCATION, PARTIAL_CONTENT, ETAG, LENGTH_REQUIRED, UNAUTHORIZED, UNSUPPORTED_MEDIA_TYPE, REFERER, REQUEST_ENTITY_TOO_LARGE, ORIGIN, ACCEPT_LANGUAGE, NOT_MODIFIED, as, Results$StringChunks, Results$Todo, HTTP_VERSION_NOT_SUPPORTED, ACCESS_CONTROL_ALLOW_ORIGIN, Results$Status, IF_RANGE, IF_UNMODIFIED_SINCE, toScala, SWITCHING_PROTOCOLS, callback, TEMPORARY_REDIRECT, CONTENT_LENGTH, SET_COOKIE, notifyAll, AGE, BAD_GATEWAY, EXPECTATION_FAILED, CONNECTION, FORWARDED, Results$ByteChunks, Results$Chunks$Out, OK, cookies, ACCESS_CONTROL_ALLOW_HEADERS, phoneForm, found, unauthorized, response, FOUND, <init>, DATE, CONTENT_RANGE, sendResource, TRANSFER_ENCODING, contentType, PROXY_AUTHORIZATION, GONE, phoneBook, ACCESS_CONTROL_ALLOW_CREDENTIALS, clearLang, cookie, NOT_ACCEPTABLE, charset, status, EXPECT, LOCATION, VARY, WWW_AUTHENTICATE, Application, TODO, forbidden, X_FORWARDED_FOR, access$000, ACCEPTED, NO_CONTENT, disconnected, INTERNAL_SERVER_ERROR, onDisconnected, lambda$new$1, UPGRADE, NOT_FOUND, session, ACCEPT_ENCODING, EXPIRES, seeOther, REQUESTED_RANGE_NOT_SATISFIABLE, header, toString, wrappedResult, lambda$onDisconnected$2, ACCEPT, changeLang, GATEWAY_TIMEOUT, whenReady, newPhone, SERVER, ACCESS_CONTROL_REQUEST_METHOD, ACCESS_CONTROL_MAX_AGE, sendPath, LAST_MODIFIED, ACCESS_CONTROL_EXPOSE_HEADERS, ACCESS_CONTROL_REQUEST_HEADERS, flash, internalServerError, ok, ALLOW, COOKIE, IF_MODIFIED_SINCE, getClass, CONTENT_TRANSFER_ENCODING, lang, headers, Results$StatusHeader, NON_AUTHORITATIVE_INFORMATION, close, PRAGMA, IF_MATCH, PROXY_AUTHENTICATION_REQUIRED, RESET_CONTENT, SEE_OTHER, CONTENT_ENCODING, RANGE, USE_PROXY, Results$Chunks, REQUEST_URI_TOO_LONG, writable, FORBIDDEN, METHOD_NOT_ALLOWED, write, IF_NONE_MATCH, ACCEPT_RANGES, noContent, X_REQUESTED_WITH, X_FORWARDED_PROTO, SERVICE_UNAVAILABLE, index, created, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\test\app\controllers\Application.java
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\Routes.scala: Set(<init>, phoneBook, Application, newPhone, getClass, index)
+Invalidating C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\RoutesPrefix.scala...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\RoutesPrefix.scala...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\RoutesPrefix.scala)
+The C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\RoutesPrefix.scala source file has the following regular definitions changed:
+	notify, byNamePrefix, wait, $asInstanceOf, equals, prefix, asInstanceOf, RoutesPrefix, synchronized, $isInstanceOf, _prefix, notifyAll, isInstanceOf, ==, clone, toString, !=, getClass, setPrefix, ne, eq, ##, finalize, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\router\Routes.scala: Set(prefix, asInstanceOf, RoutesPrefix, isInstanceOf, getClass, setPrefix)
+Invalidating C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java)
+The C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java source file has the following regular definitions changed:
+	notify, Assets, wait, routes, equals, routes$javascript, notifyAll, <init>, Application, toString, getClass, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala: Set(routes, <init>, Application)
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\main.template.scala: Set(Assets, routes, <init>)
+Invalidating C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\main.template.scala...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\main.template.scala...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\main.template.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\main.template.scala)
+The C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\main.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, main, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, apply, ==, clone, main_Scope0, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala: Set(format, _display_, main, <init>, apply)
+The following modified names cause invalidation of C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\index.template.scala: Set(format, _display_, main, <init>, apply)
+Invalidating C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala)
+The C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\phoneBook.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, apply, ==, phoneBook, clone, copy, toString, !=, getClass, copy$default$1, render, phoneBook_Scope0, ne, eq, productIterator, ##, finalize, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\test\app\controllers\Application.java
+Invalidating C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\index.template.scala...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\index.template.scala...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\index.template.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\index.template.scala)
+The C:\Users\irk\Desktop\test\test\target\scala-2.11\twirl\main\views\html\index.template.scala source file has the following regular definitions changed:
+	notify, format, wait, $asInstanceOf, productArity, equals, asInstanceOf, f, synchronized, _display_, $isInstanceOf, ref, canEqual, index_Scope0, productPrefix, notifyAll, readResolve, isInstanceOf, <init>, apply, ==, clone, copy, toString, !=, getClass, copy$default$1, render, ne, eq, productIterator, ##, finalize, index, productElement, hashCode.
+All member reference dependencies will be considered within this context.
+Invalidating C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala...
+Invalidating (transitively) by inheritance from C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala...
+Initial set of included nodes: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+The C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala source file has the following regular definitions changed:
+	notify, _defaultPrefix, wait, $asInstanceOf, equals, asInstanceOf, synchronized, $isInstanceOf, ReverseAssets, notifyAll, isInstanceOf, <init>, ==, phoneBook, clone, toString, newPhone, !=, getClass, ne, versioned, eq, ReverseApplication, ##, finalize, index, hashCode.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\irk\Desktop\test\test\target\scala-2.11\routes\main\controllers\routes.java
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 80 s, completed 13.10.2015 20:59:34
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/test/}myProject/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@1478732, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 6 s, completed 13.10.2015 20:59:41
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/irk/Desktop/test/test/}myProject/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@49a21f, check cycles: false
+Total time: 0 s, completed 13.10.2015 20:59:41
+> server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
 Closing listening server socket
@@ -73,4 +247,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 5760@dns logs at Thu Oct 01 21:55:49 IRKT 2015, goodbye.
+Closing the 8092@dns logs at Tue Oct 13 20:59:42 IRKT 2015, goodbye.

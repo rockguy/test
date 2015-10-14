@@ -4,7 +4,7 @@
 # --- !Ups
 
 create table phone (
-  id                        varchar(255) not null,
+  id                        bigint not null,
   name                      varchar(255),
   main_number               varchar(255),
   constraint pk_phone primary key (id))

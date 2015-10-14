@@ -6,16 +6,18 @@
     
     <h1>@phoneBook.size() phone(s)</h1>
     
-    <ul>
+    <table >
         @for(phone <- phoneBook) {
-            <li>
-                @phone.name
+            <tr>
+                <td>@phone.id   </td>
+                <td>@phone.name   </td>
                 
-                @phone.mainNumber
+                <td>@phone.mainNumber  <td>
                 
-            </li>
+                <a href="/deletePhone/@phone.id"> <input type="button" value ="Delete"> </a>
+            </tr>
     }
-    </ul> 
+    </table>
     
     <h2>Add a new task</h2>
     
